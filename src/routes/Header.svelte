@@ -1,4 +1,14 @@
-<header>
+<script lang="ts">
+	import {click_outside} from '$lib/click_outside';
+	function click(e: CustomEvent){
+		console.log('e', e)
+	}
+
+	let header_element: HTMLElement | undefined
+	$: console.log(header_element)
+</script>
+
+<header use:click_outside on:click-outside={click} bind:this={header_element}>
 	<h1><a href="/">Syntax Podcast</a></h1>
 </header>
 

@@ -1,6 +1,4 @@
 <script>
-	import { env } from '$env/dynamic/public';
-	import { PUBLIC_LUT_PUB_KEY } from '$env/static/public';
 	import { browser, building, dev, version } from '$app/environment';
 	import { navigating } from '$app/stores';
 	import Header from './Header.svelte';
